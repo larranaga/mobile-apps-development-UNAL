@@ -26,6 +26,8 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
     private int mComputerWinsCounter;
     private int mTiesCounter;
 
+    private boolean playerGoesFirst;
+
     private void startNewGame(){
         mGame.clearBoard();
 
@@ -33,8 +35,18 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
             mBoardButtons[i].setText("");
             mBoardButtons[i].setEnabled(true);
             mBoardButtons[i].setOnClickListener(new ButtonClickListener(i));
-            mInfoTextView.setText(R.string.player_goes_first);
+        }
 
+        if(playerGoesFirst){
+            playerGoesFirst = false;
+            mInfoTextView.setText(R.string.player_goes_first);
+        }
+        else{
+            playerGoesFirst = true;
+            mInfoTextView.setText(R.string.android_goes_first);
+            int move = mGame.getComputerMove();
+            setMove(TicTacToeGame.COMPUTER_PLAYER, move);
+            mInfoTextView.setText(R.string.player_turn);
         }
         mGameOver = false;
     }
@@ -60,6 +72,7 @@ public class AndroidTicTacToeActivity extends AppCompatActivity {
         mComputerWinsCounterTextView = (TextView) findViewById(R.id.tv_computer_counter);
         mTiesCounterTextView = (TextView) findViewById(R.id.tv_tie_counter);
         mGame = new TicTacToeGame();
+        playerGoesFirst= true;
         startNewGame();
     }
 
