@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:src="@drawable/tic_tac_toe_icon"
+        android:contentDescription="@string/app_logo"
+        android:layout_weight="0.88" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/author_information"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_info"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+
+
+
+</LinearLayout>

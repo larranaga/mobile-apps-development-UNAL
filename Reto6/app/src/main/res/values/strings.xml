@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="information_title">Information</string>
+    <string name="player_goes_first">Player goes first</string>
+    <string name="android_turn">It\'s android\'s turn</string>
+    <string name="player_turn">Player\'s turn</string>
+    <string name="tie">it\'s a tie</string>
+    <string name="player_won">Player won!</string>
+    <string name="android_won">Android won!</string>
+    <string name="new_game">New Game</string>
+    <string name="android_wins">Android Wins:</string>
+    <string name="player_wins">Player wins:</string>
+    <string name="ties">Ties:</string>
+    <string name="zero_intial_counter">0</string>
+    <string name="android_goes_first">Android Goes First</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="quit">Quit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chose_difficulty">Choose the Difficulty</string>
+    <string name="Easy">Easy</string>
+    <string name="Harder">Harder</string>
+    <string name="Expert">Expert</string>
+    <string name="quit_alert">Quit application?</string>
+    <string name="yes">yes</string>
+    <string name="no">No</string>
+    <string name="app_logo">app logo</string>
+    <string name="author_information">Tic Tac Toe by Nicolas Larranaga Cifuentes</string>
+    <string name="app_info">Play against android, choose between the three levels of difficulty.</string>
+    <string name="ok">OK</string>
+    <string name="about">about</string>
+</resources>
