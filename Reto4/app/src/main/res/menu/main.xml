@@ -5,22 +5,22 @@
     android:title="@string/new_game"
     android:id="@+id/item_new_game"
     android:icon="@drawable/new_game"
-    app:showAsAction="ifRoom"/>
+    app:showAsAction="always"/>
 
     <item
         android:id="@+id/item_ai_difficulty"
         android:title="@string/difficulty"
         android:icon="@drawable/difficulty_icon"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/item_quit"
         android:title="@string/quit"
-        app:showAsAction="never"
+        app:showAsAction="always"
         android:icon="@drawable/quit"
         />
     <item
         android:id="@+id/item_about"
         android:title="@string/about"
-        app:showAsAction="never"/>
+        app:showAsAction="always"/>
 </menu>

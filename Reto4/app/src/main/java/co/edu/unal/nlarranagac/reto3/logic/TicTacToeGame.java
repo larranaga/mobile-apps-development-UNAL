@@ -66,26 +66,7 @@ public class TicTacToeGame {
         }
         return move;
     }
-    public int getWinningMove(){
-        int move = -1;
 
-        // First see if there's a move O can make to win
-        for (int i = 0; i < BOARD_SIZE; i++) {
-            if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
-                char curr = mBoard[i];
-                mBoard[i] = COMPUTER_PLAYER;
-                if (checkForWinner() == COMPUTER_WON) {
-                    setMove(COMPUTER_PLAYER, i);
-                    return i;
-                }
-                else
-                    mBoard[i] = curr;
-            }
-        }
-
-        return move;
-
-    }
 
 
     // Check for a winner.  Return
@@ -176,6 +157,27 @@ public class TicTacToeGame {
         }
 
         return move;
+    }
+
+    public int getWinningMove(){
+        int move = -1;
+
+        // First see if there's a move O can make to win
+        for (int i = 0; i < BOARD_SIZE; i++) {
+            if (mBoard[i] != HUMAN_PLAYER && mBoard[i] != COMPUTER_PLAYER) {
+                char curr = mBoard[i];
+                mBoard[i] = COMPUTER_PLAYER;
+                if (checkForWinner() == COMPUTER_WON) {
+                    setMove(COMPUTER_PLAYER, i);
+                    return i;
+                }
+                else
+                    mBoard[i] = curr;
+            }
+        }
+
+        return move;
+
     }
 
     public enum DifficultyLevel{ Easy, Harder, Expert};
